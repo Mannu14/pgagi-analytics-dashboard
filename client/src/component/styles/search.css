@@ -1,0 +1,73 @@
+.popup-box-search{
+    position: fixed;
+    top: 15%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1500;
+    background: #202020aa;
+ }
+ .popup-box-search .popup-search{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 3;
+    max-width: 700px;
+    width: 100%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+ }
+ .popup-search .content-box-search{
+    width: calc(100% - 1px);
+    border-radius: 5px;
+    height: 500px;
+    overflow: auto;
+    background: #333;
+ }
+ .popup-search .content-box-search header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ccc;
+ }
+ .content-box-search header p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #c5cae9;
+ }
+ .content-box-search header i{
+    color: #c5cae9;
+    cursor: pointer;
+    font-size: 23px;
+ }
+ .content-box-search header i:hover{
+    color: #939ac9;
+ }
+ .content-box-search form{
+    margin: 15px 25px 35px;
+ } 
+ .content-box-search form .row-search{
+    margin-bottom: 7px;
+    background: #444;
+    padding: 5px 10px;
+ }
+ .row-search-Link{
+    font-size: 17px;
+    color: #c5cae9;
+ }
+ .row-search-Link p{
+    font-size: 12px;
+    color: #767679;
+ }
+ .content-box-search form .row-search:hover{
+    background: #222;
+ }
+ .popup-box-search, .popup-box-search .popup-search{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+ }
+ .popup-box-search.show, .popup-box-search.show .popup-search{
+    opacity: 1;
+    pointer-events: auto;
+ };

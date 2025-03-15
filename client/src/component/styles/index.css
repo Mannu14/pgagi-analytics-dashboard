@@ -1,0 +1,306 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+
+body.dark .filters{
+    background-color: #111;
+ }
+ body.dark .filters .css-13cymwt-control svg{
+    color: #888;
+ }
+ body.dark .filters .css-13cymwt-control{
+    background-color: #111;
+    border: 1px solid #b3b2b2;
+ }
+ body.light .filters{
+    background-color: #fff;
+ }
+ body.dark .dates .filter input{
+  background-color: #111;
+  border: 1px solid #b3b2b2;
+}
+body.dark .dates .filter input,
+body.dark .filter label,
+body.dark .filter .css-1jqq78o-placeholder,
+body.dark .filter .css-w9q2zk-Input2{
+  color: #c5cae9;
+}
+  
+  .filters {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .filter label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  .ApplyFilter {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid #c5cae9;
+    color: #c5cae9;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .ApplyFilter:hover {
+    color: #455054;
+    background-color: #c5cae9;
+  }
+body.dark .header{
+  background-color: #000;
+}
+body.dark .news-item{
+  background-color: #111;
+}
+body.dark .news-item h3{
+  color: #c5cae9;
+}
+body.dark .news-item p strong{
+  color: #b9b9c0;
+}
+body.dark .news-item p{
+  color: #b3b2b2;
+}
+  
+  
+  .news-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .dates{
+    display: flex;
+    width: 100%;
+  }
+  .DateInputs{
+    width: 90%;
+  }
+  .dates .filter input{
+    color: #333;
+    border: 1px solid #cfcdcd;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  .dates .filter:nth-child(2) input,
+  .dates .filter:nth-child(2) label{
+    margin-left: 12px;
+  }
+  
+  .news-item {
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(30% + 20px); /* 3 items in one line with gap of 20px */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  .news-item h4 {
+    color: #666;
+  }
+  
+  .news-item p {
+    color: #666;
+  }
+  
+  .news-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .news-item a:hover {
+    background-color: #218838;
+  }
+  
+  .error {
+    color: #fd5f5f;
+    font-weight: bold;
+  }
+#menu-btn-role{
+  display: block;
+  position: absolute;
+  transform: translate(-50px, 0px);
+}
+#menu-btn-role-none{
+  display: none;
+}
+/* ---- user table for profile  */
+.OtherUsersTable{
+  width: 100%;
+   max-width: 81.5rem;
+   background: #c5cae9;
+   border-radius: 1px;
+   text-align: center;
+   padding: 4rem 2rem;
+   /* height: 30rem; */
+}
+.Users-table{
+  width: 100%;
+}
+.Users-table tr{
+  border-bottom: 1px solid #333;
+  padding: 10px 1px;
+}
+.Users-table tr img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.Users-table thead tr th{
+  border-bottom: 1px solid black;
+}
+.Users-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid black;
+  font-size:clamp(6px,3vw,12px);
+  color: #111;
+}
+.Users-table tbody tr:last-child td {
+  font-size:clamp(6px,3vw,12px);
+}
+.Users-table tbody tr td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  padding-bottom: 7px;
+}
+.Users-table tbody tr td{
+  padding: 5px 0;
+}
+.Users-table thead th{
+  font-size:clamp(6px,3vw,15px);
+}
+.about-settings .about-menu li, .about-header,.about-popup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-settings i{
+  color: #6d6d6d;
+  font-size: 15px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.about-settings{
+  position: relative;
+}
+.about-settings .about-menu{
+  position: absolute;
+  width: 100px;
+  bottom: 22px;
+  right: 10px;
+  padding: 5px 0;
+  background: #d4d5e5;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  transform: scale(0);
+  transition: transform 0.2s ease;
+  transform-origin: bottom right;
+}
+.about-settings-user .about-menu-user{
+  top: 22px;
+  right: 15px;
+  transform-origin: right left;
+}
+.about-settings-user .fa-ellipsis-v{
+  font-size: 17px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px 12px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.about-settings .fa-ellipsis-h{
+  background: transparent;
+  border-radius: 50%;
+  padding: 5px 6px;
+  border: 1px solid #9b9eb3;
+}
+.about-settings-user .fa-ellipsis-v:hover,.about-settings .fa-ellipsis-h:hover{
+  background: #c5cae9ff;
+  border-color: #c0c0c0;
+}
+.about-settings.about-show .about-menu{
+  transform: scale(1);
+}
+.about-settings .about-menu li{
+  height: 25px;
+  cursor: pointer;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 17px 15px;
+  justify-content: flex-start;
+}
+.about-menu li:hover{
+  background: #f5f5f5;
+}
+.popBox-exist-name{
+  font-size:clamp(6px,3vw,12px);
+  color: rgb(243, 57, 57);
+}
+
+.about-wrapper-add-box{
+  bottom: 10px;
+  display: flex;
+  position: sticky;
+  width: 107px !important;
+  height: 40px !important;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1300;
+  background: #6d6d6ddd;
+  border-radius: 0 5px 5px 5px;
+  padding: 15px 20px 20px;
+}
+.about-wrapper-add-box .about-icon{
+  height: 25px;
+  width: 25px;
+  color: #c5cae9;
+  font-size: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  border: 2px dashed #c5cae9;
+}
+.about-wrapper-add-box p{
+  color: #c5cae9;
+  font-weight: bolder;
+  font-size: 15px;
+}
